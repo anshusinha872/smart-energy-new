@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import styles from "./FrameComponent15.module.css";
 import logo from "../../public/21@2x.png";
+import iconnavigationarrowBackIos from "../assets/arrow_back_ios_24px.png";
 const FrameComponent15 = ({
   contentContainerIconPadding,
   iconnavigationarrowBackIo,
@@ -19,12 +20,17 @@ const FrameComponent15 = ({
             className={styles.iconnavigationarrowBackIos}
             loading="lazy"
             alt=""
-            src={iconnavigationarrowBackIo}
+            src={iconnavigationarrowBackIos}
           />
           <div className={styles.back}>Back</div>
         </a>
       </div>
-      <img className={styles.contentContainerIcon} src={logo} loading="lazy" alt="" />
+      <img
+        className={styles.contentContainerIcon}
+        src={logo}
+        loading="lazy"
+        alt=""
+      />
     </div>
   );
 };

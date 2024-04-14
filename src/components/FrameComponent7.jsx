@@ -31,6 +31,7 @@ const FrameComponent7 = ({
       width: propWidth1,
       padding: propPadding1,
       alignSelf: propAlignSelf,
+      justifyContent: "center",
     };
   }, [propWidth1, propPadding1, propAlignSelf]);
 
@@ -38,6 +39,7 @@ const FrameComponent7 = ({
     return {
       flex: propFlex,
       width: propWidth2,
+      justifyContent: "center",
     };
   }, [propFlex, propWidth2]);
 
@@ -58,9 +60,6 @@ const FrameComponent7 = ({
       <div className={styles.frameParent} style={frameDiv4Style}>
         <div className={styles.frameContainer} style={frameDiv5Style}>
           <div className={styles.patternMatcherParent} style={frameDiv6Style}>
-            <div className={styles.patternMatcher}>
-              <img className={styles.elementIcon} alt="" />
-            </div>
             <div className={styles.timingControlWrapper}>
               <div className={styles.timingControl}>
                 <div className={styles.timingControlChild} />
@@ -71,6 +70,14 @@ const FrameComponent7 = ({
             </div>
             <div className={styles.acrossDomains} style={acrossDomainsStyle}>
               {acrossDomains}
+            </div>
+            <div className={styles.timingControlWrapper}>
+              <div className={styles.timingControl}>
+                <div className={styles.errorHandler}>
+                  <div className={styles.errorHandlerChild} />
+                </div>
+                <div className={styles.timingControlChild} />
+              </div>
             </div>
           </div>
         </div>

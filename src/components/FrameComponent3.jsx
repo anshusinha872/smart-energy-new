@@ -1,7 +1,9 @@
 import FrameComponent7 from "./FrameComponent7";
 import Box from "./Box";
 import styles from "./FrameComponent3.module.css";
-
+import Rectangle_8 from "../assets/Rectangle_8.png";
+import Rectangle_9 from "../assets/Rectangle_9.png";
+import Rectangle_10 from "../assets/Rectangle_10.png";
 const FrameComponent3 = () => {
   return (
     <div className={styles.frameWrapper}>
@@ -23,19 +25,19 @@ const FrameComponent3 = () => {
           <div className={styles.wrapper}>
             <Box
               aesortSmartEnergyHasHelpe="“ Aesort Smart Energy has helped us reduce our energy costs by 20%. The system is easy to use and provides valuable insights that allow us to make informed decisions about our energy consumption.  “"
-              rectangle8="65x65x1913016642"
+              rectangle8={Rectangle_8}
               serenaJohns="Serena Johns"
               brightTechSolutions="Bright tech solutions"
             />
             <Box
               aesortSmartEnergyHasHelpe="“ We are committed to sustainability and Aesort Smart Energy management system has been a game-changer for us. It's a win-win for our business and the environment.  “"
-              rectangle8="65x65x614214065"
+              rectangle8={Rectangle_9}
               serenaJohns="Daniel Carter"
               brightTechSolutions="Tranquil Haven Inn"
             />
             <Box
               aesortSmartEnergyHasHelpe="“ Since using Aesort Smart Energy management system, we've reduced our energy consumption and  benefitted from the system's ability to detect wastage and get recommendations  .  “"
-              rectangle8="65x65x1730758535"
+              rectangle8={Rectangle_10}
               serenaJohns="Alex Wilson"
               brightTechSolutions="velocity motors"
             />

@@ -10,9 +10,9 @@ const DataProcessor = () => {
         <div className={styles.numberHandler}>
           <div className={styles.title}>
             <div className={styles.shapeSorter}>
-              <div className={styles.patternMatcher}>
+              {/* <div className={styles.patternMatcher}>
                 <img className={styles.elementIcon} alt="" />
-              </div>
+              </div> */}
               <div className={styles.timingControlWrapper}>
                 <div className={styles.timingControl}>
                   <div className={styles.timingControlChild} />
@@ -22,6 +22,14 @@ const DataProcessor = () => {
                 </div>
               </div>
               <div className={styles.ourPricing}>Our Pricing</div>
+              <div className={styles.timingControlWrapper}>
+                <div className={styles.timingControl}>
+                  <div className={styles.timingControlChild} />
+                  <div className={styles.errorHandler}>
+                    <div className={styles.errorHandlerChild} />
+                  </div>
+                </div>
+              </div>
             </div>
             <h2 className={styles.chooseTheBest}>
               Choose the best plan for you

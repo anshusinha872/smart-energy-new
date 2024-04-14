@@ -1,5 +1,6 @@
 import styles from "./Box2.module.css";
-
+import circle_check from "../assets/circle-check.png";
+import long_arrow_right_green from "../assets/long_arrow_right_green.png";
 const Box2 = () => {
   return (
     <div className={styles.box}>
@@ -12,15 +13,16 @@ const Box2 = () => {
       </div>
       <div className={styles.iconList}>
         <div className={styles.iconList1}>
-          <div className={styles.circleCheck}>circle-check</div>
+          {/* <div className={styles.circleCheck}>circle-check</div> */}
+          <img className={styles.circleCheck} src={circle_check} alt="" />
           <div className={styles.realTimeMonitoring}>Real-Time Monitoring</div>
         </div>
         <div className={styles.iconList2}>
-          <div className={styles.circleCheck1}>circle-check</div>
+        <img className={styles.circleCheck} src={circle_check} alt="" />
           <div className={styles.predictiveAnalysis}>Predictive Analysis</div>
         </div>
         <div className={styles.iconList3}>
-          <div className={styles.circleCheck2}>circle-check</div>
+        <img className={styles.circleCheck} src={circle_check} alt="" />
           <div className={styles.actionableRecommendations}>
             Actionable Recommendations
           </div>
@@ -31,7 +33,8 @@ const Box2 = () => {
       </button>
       <button className={styles.button}>
         <div className={styles.button1}>CHOOSE PLAN</div>
-        <div className={styles.longArrowRight}>long-arrow-right</div>
+        {/* <div className={styles.longArrowRight}>long-arrow-right</div> */}
+        <img className={styles.longArrowRight} src={long_arrow_right_green} alt="" />
       </button>
     </div>
   );

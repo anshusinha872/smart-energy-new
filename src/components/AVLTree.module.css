@@ -539,6 +539,7 @@
   max-width: 100%;
   font-size: var(--font-size-29xl);
   font-family: var(--paragraph);
+  background-image: url(../assets/Group_108.png)
 }
 @media screen and (max-width: 1200px) {
   .shortestPathTree {

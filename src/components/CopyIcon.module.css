@@ -29,8 +29,9 @@
   z-index: 1;
 }
 .frameChild {
-  align-self: stretch;
+  /* align-self: stretch; */
   height: 20px;
+  width: 28px;
   overflow: hidden;
   flex-shrink: 0;
   z-index: 2;

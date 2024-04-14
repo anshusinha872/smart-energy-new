@@ -1,5 +1,7 @@
 import styles from "./FrameComponent2.module.css";
-
+import chevron_down from "../assets/chevron-down.png";
+import image12 from "../assets/image12.png";
+import image11 from "../assets/image11.png";
 const FrameComponent2 = () => {
   return (
     <div className={styles.frameWrapper}>
@@ -7,8 +9,13 @@ const FrameComponent2 = () => {
         <div className={styles.iterationLoopParent}>
           <div className={styles.iterationLoop}>
             <div className={styles.dataFilter}>
-              <div className={styles.patternMatcher}>
-                <img className={styles.elementIcon} alt="" />
+              <div className={styles.timingControlWrapper}>
+                <div className={styles.timingControl}>
+                  <div className={styles.errorHandler}>
+                    <div className={styles.errorHandlerChild} />
+                  </div>
+                  <div className={styles.priorityHandler} />
+                </div>
               </div>
               <div className={styles.frequentlyAskedQuestions}>
                 Frequently Asked Questions
@@ -35,14 +42,15 @@ const FrameComponent2 = () => {
                 What types of buildings can benefit from your system?
               </div>
               <div className={styles.chevronDownWrapper}>
-                <div className={styles.chevronDown}>chevron-down</div>
+                {/* <div className={styles.chevronDown}>chevron-down</div> */}
+                <img src={chevron_down} alt="" />
               </div>
             </div>
           </div>
           <div className={styles.dataAggregator1}>
             <div className={styles.ourSystemIsIdealForCommerWrapper}>
               <div className={styles.ourSystemIs}>
-                 Our system is ideal for commercial buildings, including Small
+                Our system is ideal for commercial buildings, including Small
                 to Medium sized companies, Hospitality industry, Retail Chains,
                 Educational Institutions and more.
               </div>
@@ -52,7 +60,7 @@ const FrameComponent2 = () => {
                 How Long Working Time ?
               </div>
               <div className={styles.chevronDownContainer}>
-                <div className={styles.chevronDown1}>chevron-down</div>
+                <img src={chevron_down} alt="" />
               </div>
             </div>
           </div>
@@ -62,7 +70,7 @@ const FrameComponent2 = () => {
                 What data is collected by the management system ?
               </div>
               <div className={styles.chevronDownFrame}>
-                <div className={styles.chevronDown2}>chevron-down</div>
+                <img src={chevron_down} alt="" />
               </div>
             </div>
           </div>
@@ -72,7 +80,7 @@ const FrameComponent2 = () => {
                 What types of systems can be monitored and controlled ?
               </div>
               <div className={styles.frameDiv}>
-                <div className={styles.chevronDown3}>chevron-down</div>
+                <img src={chevron_down} alt="" />
               </div>
             </div>
             <div className={styles.accordion4}>
@@ -81,16 +89,16 @@ const FrameComponent2 = () => {
                 System ?
               </div>
               <div className={styles.chevronDownWrapper1}>
-                <div className={styles.chevronDown4}>chevron-down</div>
+                <img src={chevron_down} alt=""  />
               </div>
             </div>
           </div>
         </div>
         <div className={styles.treeStructure}>
-          <img className={styles.maskGroupIcon} alt="" />
+          <img className={styles.maskGroupIcon} src={image11} alt="" />
           <div className={styles.rootedTree}>
             <div className={styles.wrapperMaskGroup}>
-              <img className={styles.maskGroupIcon1} alt="" />
+              <img className={styles.maskGroupIcon1} src={image12} alt="" />
             </div>
             <div className={styles.decisionTree} />
           </div>

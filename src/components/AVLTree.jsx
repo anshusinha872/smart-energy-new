@@ -1,10 +1,18 @@
 import styles from "./AVLTree.module.css";
-
+import Group_108 from "../assets/Group_108.png";
+import footer_img from "../assets/22.png";
+import ph_envelope_fill from "../assets/ph_envelope-fill.png";
+import ph_phone_call_fill from "../assets/ph_phone-call-fill.png";
+import Vector from "../assets/Vector.png";
+import caret_right from "../assets/caret-right.png";
+import facebook from "../assets/facebook.png";
+import twitter from "../assets/twitter.png";
+import instagram from "../assets/instagram.png";
 const AVLTree = () => {
   return (
     <section className={styles.aVLTree}>
       <div className={styles.maskGroupParent}>
-        <img className={styles.maskGroupIcon} alt="" />
+        <img className={styles.maskGroupIcon} src={Group_108} alt="" />
         <div className={styles.cta}>
           <div className={styles.trie}>
             <h1 className={styles.theFutureOf}>
@@ -24,23 +32,31 @@ const AVLTree = () => {
       <footer className={styles.footer}>
         <div className={styles.shortestPathTree}>
           <div className={styles.minimumSpanningTree}>
-            <img className={styles.primAlgorithmIcon} loading="lazy" alt="" />
+            <img
+              className={styles.primAlgorithmIcon}
+              src={footer_img}
+              loading="lazy"
+              alt=""
+            />
             <div className={styles.kruskalAlgorithm}>
               <div className={styles.dijkstraAlgorithm}>
                 <img
                   className={styles.phenvelopeFillIcon}
                   loading="lazy"
+                  src={ph_envelope_fill}
                   alt=""
                 />
                 <img
                   className={styles.phphoneCallFillIcon}
                   loading="lazy"
+                  src={ph_phone_call_fill}
                   alt=""
                 />
                 <img
                   className={styles.phmapPinLineFillIcon}
                   loading="lazy"
                   alt=""
+                  src={Vector}
                 />
               </div>
               <div className={styles.floydWarshallAlgorithm}>
@@ -63,19 +79,19 @@ const AVLTree = () => {
               <b className={styles.quickLinks1}>Quick Links</b>
               <div className={styles.iconList}>
                 <div className={styles.list}>
-                  <div className={styles.caretRight}>caret-right</div>
+                  <img src={caret_right} alt="" />
                   <div className={styles.home}>Home</div>
                 </div>
                 <div className={styles.list1}>
-                  <div className={styles.caretRight1}>caret-right</div>
+                  <img src={caret_right} alt="" />
                   <div className={styles.aboutUs}>About Us</div>
                 </div>
                 <div className={styles.list2}>
-                  <div className={styles.caretRight2}>caret-right</div>
+                  <img src={caret_right} alt="" />
                   <div className={styles.ourService}>Our Service</div>
                 </div>
                 <div className={styles.list3}>
-                  <div className={styles.caretRight3}>caret-right</div>
+                  <img src={caret_right} alt="" />
                   <div className={styles.testimonials}>Testimonials</div>
                 </div>
               </div>
@@ -84,15 +100,15 @@ const AVLTree = () => {
               <b className={styles.usefulLinks}>Useful Links</b>
               <div className={styles.iconList1}>
                 <div className={styles.list4}>
-                  <div className={styles.caretRight4}>caret-right</div>
+                  <img src={caret_right} alt="" />
                   <div className={styles.privacyPolicy}>Privacy Policy</div>
                 </div>
                 <div className={styles.list5}>
-                  <div className={styles.caretRight5}>caret-right</div>
+                  <img src={caret_right} alt="" />
                   <div className={styles.disclaimer}>Disclaimer</div>
                 </div>
                 <div className={styles.list6}>
-                  <div className={styles.caretRight6}>caret-right</div>
+                  <img src={caret_right} alt="" />
                   <div
                     className={styles.termsCondition}
                   >{`Terms & Condition`}</div>
@@ -103,9 +119,9 @@ const AVLTree = () => {
             <div className={styles.modelEvaluator}>
               <b className={styles.followUs}>Follow Us</b>
               <div className={styles.outputGenerator}>
-                <div className={styles.facebook}>facebook</div>
-                <div className={styles.twitter}>twitter</div>
-                <div className={styles.instagram}>instagram</div>
+                <img src={facebook} alt="" />
+                <img src={twitter} alt="" />
+                <img src={instagram} alt="" />
               </div>
             </div>
           </div>

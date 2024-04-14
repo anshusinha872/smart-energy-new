@@ -156,7 +156,7 @@
   color: var(--heading);
 }
 .ourSystemIs {
-  height: 74.1px;
+  /* height: 74.1px; */
   flex: 1;
   position: relative;
   line-height: 26px;
