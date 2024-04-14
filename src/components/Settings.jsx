@@ -1,45 +1,18 @@
 import SideBarNotificationProC2 from "./SideBarNotificationProC2";
 import IconSet from "./IconSet";
 import styles from "./Settings.module.css";
-
+import SideBarNotificationProC from "./SideBarNotificationProC";
+import FrameComponent from "./FrameComponent";
+import plus_icon from "../assets/plus_icon.png";
 const Settings = () => {
   return (
     <div className={styles.settings}>
       <div className={styles.sidebar}>
-        <SideBarNotificationProC2 />
+      <SideBarNotificationProC />
       </div>
       <main className={styles.settingsInner}>
         <section className={styles.frameParent}>
-          <div className={styles.frameWrapper}>
-            <div className={styles.frameGroup}>
-              <div className={styles.settingsWrapper}>
-                <h1 className={styles.settings1}>Settings</h1>
-              </div>
-              <div className={styles.frameContainer}>
-                <img className={styles.frameChild} loading="lazy" alt="" />
-                <div className={styles.rectangleParent}>
-                  <div className={styles.frameItem} />
-                  <div className={styles.healthiconsuiUserProfileParent}>
-                    <img
-                      className={styles.healthiconsuiUserProfile}
-                      loading="lazy"
-                      alt=""
-                    />
-                    <div className={styles.alexCooperWrapper}>
-                      <div className={styles.alexCooper}>Alex Cooper</div>
-                    </div>
-                  </div>
-                  <div className={styles.ictwotoneArrowDropDownWrapper}>
-                    <img
-                      className={styles.ictwotoneArrowDropDownIcon}
-                      loading="lazy"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <FrameComponent />
           <div className={styles.rectangleGroup}>
             <div className={styles.frameInner} />
             <div className={styles.shapeCollectionWrapper}>
@@ -67,7 +40,7 @@ const Settings = () => {
                       </button>
                       <button className={styles.progressBarClusterParent}>
                         <div className={styles.progressBarCluster} />
-                        <img className={styles.icon} alt="" />
+                        <img className={styles.icon} src={plus_icon} alt="" />
                       </button>
                     </div>
                   </div>
@@ -123,7 +96,7 @@ const Settings = () => {
                     </button>
                     <button className={styles.dataNormalizer}>
                       <div className={styles.errorDetector} />
-                      <img className={styles.icon1} alt="" />
+                      <img className={styles.icon1} alt="" src={plus_icon} />
                     </button>
                   </div>
                 </div>
@@ -134,16 +107,7 @@ const Settings = () => {
                     <div className={styles.dataSorter}>
                       <div className={styles.unit}>Unit</div>
                     </div>
-                    <div className={styles.geometryScaler}>
-                      <div className={styles.geometryScalerChild} />
-                      <div className={styles.conditionChecker}>
-                        <div className={styles.temperature}>Temperature</div>
-                      </div>
-                      <img
-                        className={styles.materialSymbolsarrowDropDoIcon}
-                        alt=""
-                      />
-                    </div>
+                    <input className={styles.geometryScaler} placeholder="68 F" type="text" />
                   </div>
                   <div className={styles.functionCombiner1}>
                     <div className={styles.minimumThresholdWrapper}>
@@ -151,23 +115,7 @@ const Settings = () => {
                         Minimum Threshold
                       </div>
                     </div>
-                    <div className={styles.rectangleParent1}>
-                      <div className={styles.frameChild1} />
-                      <div className={styles.frameParent1}>
-                        <div className={styles.errorCorrectorWrapper}>
-                          <div className={styles.errorCorrector}>0</div>
-                        </div>
-                        <input
-                          className={styles.f}
-                          placeholder="68 F"
-                          type="text"
-                        />
-                      </div>
-                      <img
-                        className={styles.materialSymbolsarrowDropDoIcon1}
-                        alt=""
-                      />
-                    </div>
+                    <input className={styles.rectangleParent1} placeholder="68 F" type="text" />
                   </div>
                   <div className={styles.functionCombiner2}>
                     <div className={styles.maximumThresholdWrapper}>
@@ -175,22 +123,7 @@ const Settings = () => {
                         Maximum Threshold
                       </div>
                     </div>
-                    <div className={styles.rectangleParent2}>
-                      <div className={styles.frameChild2} />
-                      <div className={styles.frameParent2}>
-                        <div className={styles.wrapper}>
-                          <div className={styles.div}>0</div>
-                        </div>
-                        <div className={styles.f1}>78 F</div>
-                      </div>
-                      <div className={styles.materialSymbolsarrowDropDoWrapper}>
-                        <img
-                          className={styles.materialSymbolsarrowDropDoIcon2}
-                          loading="lazy"
-                          alt=""
-                        />
-                      </div>
-                    </div>
+                    <input className={styles.rectangleParent2} placeholder="78 F" type="text" />
                   </div>
                 </div>
               </div>

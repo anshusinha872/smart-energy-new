@@ -1,15 +1,19 @@
 import SideBarNotificationProC3 from "./SideBarNotificationProC3";
 import styles from "./Reports.module.css";
-
+import SideBarNotificationProC from "./SideBarNotificationProC";
+import FrameComponent from "./FrameComponent";
+import dropdownIcon from "../assets/dropdown_arrow.png";
+import statsgraph from "../assets/Capture3.png";
+import Figpie from "../assets/Figpie.png";
 const Reports = () => {
   return (
     <div className={styles.reports}>
       <div className={styles.sidebar}>
-        <SideBarNotificationProC3 />
+      <SideBarNotificationProC />
       </div>
       <section className={styles.reportsInner}>
         <div className={styles.frameParent}>
-          <div className={styles.frameGroup}>
+          {/* <div className={styles.frameGroup}>
             <div className={styles.reportsWrapper}>
               <h1 className={styles.reports1}>Reports</h1>
             </div>
@@ -36,22 +40,24 @@ const Reports = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
+          <FrameComponent />
           <div className={styles.consumptionPerDayParent}>
             <div className={styles.consumptionPerDay}>
               <div className={styles.titleParent}>
                 <h1 className={styles.title}>Usage</h1>
                 <div className={styles.userProfileIconWrapper}>
                   <div className={styles.userProfileIcon}>
-                    <b className={styles.daily}>Daily</b>
-                    <div className={styles.securitySystems}>
-                      <img className={styles.arrowDropUpIcon} alt="" />
-                    </div>
+                    <select className={styles.daily}>
+                      <option className={styles.option} value="1">
+                        Daily
+                      </option>
+                    </select>
                   </div>
                 </div>
               </div>
               <div className={styles.consumptionDay}>
-                <img className={styles.capture31Icon} alt="" />
+                <img className={styles.capture31Icon} src={statsgraph} alt="" />
                 <div className={styles.rectangleGroup}>
                   <div className={styles.frameInner} />
                   <div className={styles.mediumPieChart}>
@@ -84,10 +90,20 @@ const Reports = () => {
                 <div className={styles.frameDiv}>
                   <div className={styles.titleGroup}>
                     <b className={styles.title1}>Equipment Analysis</b>
-                    <select className={styles.frameSelect} />
+                    <select className={styles.frameSelect}>
+                      <option className={styles.option} value="1">
+                        Monthly
+                      </option>
+                      <option className={styles.option1} value="2">
+                        2
+                      </option>
+                      <option className={styles.option2} value="3">
+                        3
+                      </option>
+                    </select>
                   </div>
                   <div className={styles.pieChart}>
-                    <img className={styles.figpieIcon} loading="lazy" alt="" />
+                    <img className={styles.figpieIcon} src={Figpie} loading="lazy" alt="" />
                   </div>
                 </div>
               </div>

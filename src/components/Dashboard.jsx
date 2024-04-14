@@ -376,7 +376,6 @@ const Dashboard = () => {
                   </div>
                 </div>
                 <div className={styles.valueFilter1}>
-                  {/* <select className={styles.valueFilterChild} /> */}
                   <select className={styles.valueFilterChild}>
                     <option>Value Filter</option>
                   </select>

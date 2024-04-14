@@ -85,15 +85,23 @@ const IconSet = ({
         </div>
         <div className={styles.searchBarParent}>
           <div className={styles.searchBar}>
-            <select
+            {/* <select
               className={styles.sliderControls}
               style={sliderControlsStyle}
-            />
+            /> */}
+            <select  className={styles.sliderControls}>
+              <option value="mondayToFriday">{mondayToFriday}</option>
+              <option value="aM500PM">{aM500PM}</option>
+            </select>
           </div>
-          <select
+          {/* <select
             className={styles.sliderControls1}
             style={sliderControls1Style}
-          />
+          /> */}
+          <select className={styles.sliderControls1}>
+            <option value="mondayToFriday">{mondayToFriday}</option>
+            <option value="aM500PM">{aM500PM}</option>
+          </select>
         </div>
       </div>
     </div>

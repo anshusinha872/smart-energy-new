@@ -1,15 +1,17 @@
 import SideBarNotificationProC1 from "./SideBarNotificationProC1";
 import styles from "./Alerts.module.css";
-
+import SideBarNotificationProC from "./SideBarNotificationProC";
+import FrameComponent from "./FrameComponent";
+import Search_Icon from "../assets/Search Icon.png";
 const Alerts = () => {
   return (
     <div className={styles.alerts}>
       <div className={styles.sidebar}>
-        <SideBarNotificationProC1 />
+        <SideBarNotificationProC />
       </div>
       <main className={styles.alertsInner}>
         <section className={styles.frameParent}>
-          <div className={styles.frameGroup}>
+          {/* <div className={styles.frameGroup}>
             <div className={styles.alertsWrapper}>
               <h1 className={styles.alerts1}>Alerts</h1>
             </div>
@@ -38,7 +40,8 @@ const Alerts = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
+          <FrameComponent />
           <div className={styles.rectangleGroup}>
             <footer className={styles.frameInner} />
             <div className={styles.frameDiv}>
@@ -62,7 +65,11 @@ const Alerts = () => {
                 <div className={styles.background}>
                   <div className={styles.backgroundChild} />
                   <div className={styles.searchIconWrapper}>
-                    <img className={styles.searchIcon} alt="" />
+                    <img
+                      className={styles.searchIcon}
+                      src={Search_Icon}
+                      alt=""
+                    />
                   </div>
                   <input
                     className={styles.search}

@@ -133,10 +133,12 @@
 .daily {
   line-height: 21px;
   min-width: 35px;
+  border: none !important;
+  outline: none !important;
 }
 .arrowDropUpIcon {
-  width: 19px;
-  height: 19px;
+  width: 10px;
+  height: 15px;
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
@@ -158,6 +160,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  align-items: center;
 }
 .userProfileIconWrapper {
   flex-direction: column;
@@ -172,7 +175,7 @@
 .capture31Icon,
 .frameInner {
   position: relative;
-  display: none;
+  /* display: none; */
   max-width: 100%;
 }
 .capture31Icon {
@@ -182,7 +185,7 @@
 }
 .frameInner {
   height: 26px;
-  width: 655px;
+  /* width: 655px; */
   background-color: var(--white);
 }
 .text {
@@ -282,6 +285,7 @@
 }
 .rectangleGroup {
   flex: 1;
+  width: 704px;
   background-color: var(--white);
   flex-direction: row;
   align-items: flex-start;
@@ -300,7 +304,7 @@
 }
 .consumptionDay {
   align-self: stretch;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-end;
   padding: var(--padding-7xs) var(--padding-4xl) var(--padding-7xs)
     var(--padding-6xl);
