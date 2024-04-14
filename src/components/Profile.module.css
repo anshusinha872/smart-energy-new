@@ -259,4 +259,12 @@
   font-size: var(--font-size-base);
   color: var(--white);
   font-family: var(--paragraph);
+  box-sizing: border-box;
+  width: 233px;
+  left: calc(50% - 233px / 2);
+  top: calc(50% - 237px / 2);
+  padding: 0.25rem;
+  background: rgba(131, 131, 131, 0.2);
+  backdrop-filter: blur(20px);
+  border-radius: 0 0 31px 31px;
 }

@@ -139,6 +139,9 @@
   max-width: 100%;
   gap: var(--gap-xl);
 }
+.vectorParentactive{
+  border-radius: 31px 31px 0 0 !important;
+}
 .rectangleDiv {
   height: 65px;
   flex: 1;

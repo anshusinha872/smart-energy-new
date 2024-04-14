@@ -1,13 +1,17 @@
 import FrameComponent1 from "./FrameComponent1";
 import styles from "./SideBarNotificationProC.module.css";
-
+import logo_1 from "../assets/logo_1.png";
+import element_3 from "../assets/element_3.png";
+import icon_11 from "../assets/icon_11.png";
+import Group_1000004756 from "../assets/Group_1000004756.png";
+import icon_121 from "../assets/icon_121.png";
 const SideBarNotificationProC = () => {
   return (
     <div className={styles.sidebarNotificationProC}>
       <div className={styles.inputPort}>
         <div className={styles.inputPortChild} />
         <div className={styles.outputPort}>
-          <img className={styles.operatorIcon} loading="lazy" alt="" />
+          <img className={styles.operatorIcon} src={logo_1} loading="lazy" alt="" />
         </div>
         <img className={styles.separatorIcon} loading="lazy" alt="" />
       </div>
@@ -22,6 +26,7 @@ const SideBarNotificationProC = () => {
                       className={styles.vuesaxboldelement3Icon}
                       loading="lazy"
                       alt=""
+                      src={element_3}
                     />
                   </div>
                   <div className={styles.pagetitle}>Dashboard</div>
@@ -30,14 +35,14 @@ const SideBarNotificationProC = () => {
               <div className={styles.frameWrapper1}>
                 <a className={styles.frameParent1}>
                   <div className={styles.iconWrapper}>
-                    <img className={styles.icon} loading="lazy" alt="" />
+                    <img className={styles.icon} src={icon_11} loading="lazy" alt="" />
                   </div>
                   <div className={styles.pagetitle1}>Reports</div>
                 </a>
               </div>
               <a className={styles.frameParent2}>
                 <div className={styles.iconContainer}>
-                  <img className={styles.icon1} loading="lazy" alt="" />
+                  <img className={styles.icon1} src={Group_1000004756} loading="lazy" alt="" />
                 </div>
                 <div className={styles.pagetitle2}>Alerts</div>
               </a>
@@ -57,7 +62,7 @@ const SideBarNotificationProC = () => {
           <div className={styles.frameWrapper2}>
             <a className={styles.frameParent5}>
               <div className={styles.iconFrame}>
-                <img className={styles.icon2} loading="lazy" alt="" />
+                <img className={styles.icon2} src={icon_121} loading="lazy" alt="" />
               </div>
               <div className={styles.pagetitle3}>Settings</div>
             </a>

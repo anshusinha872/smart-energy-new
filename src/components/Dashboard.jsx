@@ -2,7 +2,16 @@ import SideBarNotificationProC from "./SideBarNotificationProC";
 import FrameComponent from "./FrameComponent";
 import SystemEfficiency from "./SystemEfficiency";
 import styles from "./Dashboard.module.css";
-
+import sun from "../assets/sun.png";
+import Group_1000004567 from "../assets/Group_1000004567.png";
+import Group_1000004567_copy from "../assets/Group_1000004567_copy.png";
+import vector_1 from "../assets/vector_1.png";
+import setting_suggest from "../assets/setting_suggest.png";
+import charger_FILL0_wght400_GRAD0_opsz48_1 from "../assets/charger_FILL0_wght400_GRAD0_opsz48 1.png";
+import Dollar from "../assets/Dollar.png";
+import arrow_circle_down from "../assets/arrow-circle-down.png";
+import setting_5 from "../assets/setting-5.png";
+import tabler_bulb from "../assets/tabler_bulb.png";
 const Dashboard = () => {
   return (
     <div className={styles.dashboard}>
@@ -36,7 +45,7 @@ const Dashboard = () => {
                         <div className={styles.frameItem} />
                         <div className={styles.rectangleContainer}>
                           <div className={styles.frameInner} />
-                          <img className={styles.iconsun} alt="" />
+                          <img className={styles.iconsun} src={sun} alt="" />
                         </div>
                         <div className={styles.wrapper}>
                           <div className={styles.div}>75%</div>
@@ -47,7 +56,11 @@ const Dashboard = () => {
                       <div className={styles.rectangleDiv} />
                       <div className={styles.frameParent1}>
                         <div className={styles.frameWrapper}>
-                          <img className={styles.groupIcon} alt="" />
+                          <img
+                            className={styles.groupIcon}
+                            src={Group_1000004567}
+                            alt=""
+                          />
                         </div>
                         <div className={styles.turnOff}>Turn Off</div>
                       </div>
@@ -84,7 +97,11 @@ const Dashboard = () => {
                       <div className={styles.turnOnParent}>
                         <div className={styles.turnOn}>Turn On</div>
                         <div className={styles.frameWrapper1}>
-                          <img className={styles.frameChild3} alt="" />
+                          <img
+                            className={styles.frameChild3}
+                            src={Group_1000004567_copy}
+                            alt=""
+                          />
                         </div>
                       </div>
                     </div>
@@ -105,6 +122,7 @@ const Dashboard = () => {
                                   className={styles.acUnitIcon}
                                   loading="lazy"
                                   alt=""
+                                  src={vector_1}
                                 />
                               </div>
                             </div>
@@ -142,7 +160,11 @@ const Dashboard = () => {
                     <div className={styles.frameChild8} />
                     <div className={styles.frameParent6}>
                       <div className={styles.frameWrapper7}>
-                        <img className={styles.frameChild9} alt="" />
+                        <img
+                          className={styles.frameChild9}
+                          src={Group_1000004567}
+                          alt=""
+                        />
                       </div>
                       <div className={styles.turnOff1}>Turn Off</div>
                     </div>
@@ -152,13 +174,13 @@ const Dashboard = () => {
               <div className={styles.frameParent7}>
                 <div className={styles.systemEfficiencyParent}>
                   <SystemEfficiency
-                    settingSuggest="28x28x2110175817"
+                    settingSuggest={setting_suggest}
                     overallSystem="Overall System"
                     efficiency="Efficiency"
                     prop="75%"
                   />
                   <SystemEfficiency
-                    settingSuggest="28x28x-114036743"
+                    settingSuggest={charger_FILL0_wght400_GRAD0_opsz48_1}
                     overallSystem="Renewable Energy"
                     efficiency="Utilization"
                     prop="70%"
@@ -174,6 +196,7 @@ const Dashboard = () => {
                           className={styles.dollarIcon}
                           loading="lazy"
                           alt=""
+                          src={Dollar}
                         />
                       </div>
                       <div className={styles.energyCostSavingsWrapper}>
@@ -196,6 +219,7 @@ const Dashboard = () => {
                         className={styles.vuesaxbulkarrowCircleDownIcon}
                         loading="lazy"
                         alt=""
+                        src={arrow_circle_down}
                       />
                     </div>
                   </div>
@@ -215,8 +239,13 @@ const Dashboard = () => {
                         </div>
                       </div>
                       <div className={styles.buttonParent}>
-                        <select className={styles.button} />
-                        <select className={styles.button1} />
+                        <select className={styles.button}>
+                          <option>Today</option>
+                        </select>
+
+                        <select className={styles.button}>
+                          <option>Today</option>
+                        </select>
                       </div>
                     </div>
                     <div className={styles.frameParent10}>
@@ -325,6 +354,7 @@ const Dashboard = () => {
                       className={styles.tablerbulbIcon}
                       loading="lazy"
                       alt=""
+                      src={tabler_bulb}
                     />
                     <div className={styles.comparisonOperator1}>
                       <div className={styles.recommendations}>
@@ -346,7 +376,10 @@ const Dashboard = () => {
                   </div>
                 </div>
                 <div className={styles.valueFilter1}>
-                  <select className={styles.valueFilterChild} />
+                  {/* <select className={styles.valueFilterChild} /> */}
+                  <select className={styles.valueFilterChild}>
+                    <option>Value Filter</option>
+                  </select>
                   <div className={styles.valueFilterInner}>
                     <div className={styles.functionApplierParent}>
                       <div className={styles.functionApplier} />
