@@ -2,8 +2,13 @@ import TreeTrunk from "./TreeTrunk";
 import KdTreeZ from "./KdTreeZ";
 import ItemCollector from "./ItemCollector";
 import FrameComponent18 from "./FrameComponent18";
-import Footer1 from "./Footer1";
+import FrameComponent19 from "./FrameComponent19";
+import FrameComponent20 from "./FrameComponent20";
+import FrameComponent21 from "./FrameComponent21";
+import Footer from "./Footer";
 import styles from "./Desktop1.module.css";
+import Dubai from "../assets/images/dubai.png"
+import Visa from "../assets/images/visa.png"
 
 const Desktop1 = () => {
   return (
@@ -13,7 +18,7 @@ const Desktop1 = () => {
         <b className={styles.uploadStationImage}>upload station Image</b>
       </div>
       <TreeTrunk />
-      <img className={styles.maskGroupIcon} loading="lazy" alt="" />
+      <img className={styles.maskGroupIcon} loading="lazy" alt="" src={Dubai}/>
       <div className={styles.desktop10Inner}>
         <div className={styles.rectangleGroup}>
           <div className={styles.frameItem} />
@@ -195,16 +200,17 @@ const Desktop1 = () => {
                 <form className={styles.treePruner}>
                   <div className={styles.treeSplitterWrapper}>
                     <div className={styles.treeSplitter}>
-                      <div className={styles.decorator}>
-                        <b className={styles.mobileNo11}>Type of building</b>
-                        <div className={styles.wrapperGroup515718}>
-                          <input
-                            className={styles.wrapperGroup515718Child}
-                            type="text"
-                          />
-                          <img className={styles.valueTrackerIcon} alt="" />
-                        </div>
-                      </div>
+                    <div className={styles.decorator}>
+      <b className={styles.mobileNo11}>Type of building</b>
+      <div className={styles.wrapperGroup515718}>
+        {/* Replace input with select for dropdown */}
+        <select className={styles.wrapperGroup515718Child}>
+          <option value="commercial">Commercial</option>
+          
+          {/* Add more options as needed */}
+        </select>
+      </div>
+    </div>
                       <div className={styles.dataFlowController}>
                         <div className={styles.treeWalker}>
                           <b className={styles.mobileNo12}>Number of Floors</b>
@@ -224,33 +230,72 @@ const Desktop1 = () => {
                     <div className={styles.rasterTree}>
                       <b className={styles.mobileNo13}>Types of rooms</b>
                       <div className={styles.kdBTree}>
-                        <div className={styles.bSPTreePlus}>
+                        {/* <div className={styles.bSPTreePlus}>
                           <div className={styles.bSPTreePlusChild} />
                           <input
                             className={styles.rtreePlus}
                             placeholder="Conference Room"
                             type="text"
                           />
-                          <img className={styles.bSPTreePlusItem} alt="" />
-                        </div>
-                        <div className={styles.rectangleParent17}>
-                          <div className={styles.frameChild18} />
-                          <input
-                            className={styles.frameInput}
-                            placeholder="Service room"
-                            type="text"
-                          />
-                          <img className={styles.groupIcon} alt="" />
-                        </div>
-                        <div className={styles.rectangleParent18}>
-                          <div className={styles.frameChild19} />
-                          <input
-                            className={styles.frameChild20}
-                            placeholder="Cafeteria"
-                            type="text"
-                          />
-                          <img className={styles.frameChild21} alt="" />
-                        </div>
+                          <img className={styles.bSPTreePlusItem} alt=""  />
+                        </div> */}
+                          <div className={styles.bSPTreePlus}>
+      <div className={styles.bSPTreePlusChild} />
+      <input
+        className={styles.rtreePlus}
+        placeholder="Conference Room"
+        type="text"
+      />
+      {/* Container with shadow inside */}
+      <div className={styles.buttonContainer}>
+        {/* Plus button */}
+        <button className={styles.plusButton}>
+          -
+        </button>
+        {/* Minus button */}
+        <button className={styles.minusButton}>
+          +
+        </button>
+      </div>
+    </div>
+    <div className={styles.bSPTreePlus}>
+      <div className={styles.bSPTreePlusChild} />
+      <input
+        className={styles.rtreePlus}
+        placeholder="Service Room"
+        type="text"
+      />
+      {/* Container with shadow inside */}
+      <div className={styles.buttonContainer}>
+        {/* Plus button */}
+        <button className={styles.plusButton}>
+          -
+        </button>
+        {/* Minus button */}
+        <button className={styles.minusButton}>
+          +
+        </button>
+      </div>
+    </div>
+    <div className={styles.bSPTreePlus}>
+      <div className={styles.bSPTreePlusChild} />
+      <input
+        className={styles.rtreePlus}
+        placeholder="Cafeteria"
+        type="text"
+      />
+      {/* Container with shadow inside */}
+      <div className={styles.buttonContainer}>
+        {/* Plus button */}
+        <button className={styles.plusButton}>
+          -
+        </button>
+        {/* Minus button */}
+        <button className={styles.minusButton}>
+          +
+        </button>
+      </div>
+    </div>
                       </div>
                     </div>
                   </div>
@@ -298,11 +343,19 @@ const Desktop1 = () => {
                         </div>
                       </div>
                     </div>
-                    <img
-                      className={styles.frameChild25}
-                      loading="lazy"
-                      alt=""
-                    />
+                    
+      {/* Container with shadow inside */}
+      <div className={styles.buttonContainer}>
+        {/* Plus button */}
+        <button className={styles.plusButton}>
+          -
+        </button>
+        {/* Minus button */}
+        <button className={styles.minusButton}>
+          +
+        </button>
+      </div>
+    
                   </div>
                 </div>
               </div>
@@ -363,7 +416,7 @@ const Desktop1 = () => {
                 <div className={styles.frameParent6}>
                   <div className={styles.frameParent7}>
                     <FrameComponent18 mobileNo="Occupancy Schedule - Day" />
-                    <FrameComponent18
+                    <FrameComponent20
                       mobileNo="Peak Occupancy - Day "
                       groupSelectHeight="unset"
                       groupSelectPadding="var(--padding-sm) var(--padding-sm) var(--padding-mini) var(--padding-2xl)"
@@ -371,13 +424,13 @@ const Desktop1 = () => {
                     />
                   </div>
                   <div className={styles.frameParent8}>
-                    <FrameComponent18
+                    <FrameComponent19
                       mobileNo="Occupancy Schedule - Time"
                       groupSelectHeight="unset"
                       groupSelectPadding="var(--padding-sm) var(--padding-sm) var(--padding-mini) var(--padding-2xl)"
                       groupSelectGap="20px"
                     />
-                    <FrameComponent18
+                    <FrameComponent21
                       mobileNo="Peak Occupancy -  Time"
                       groupSelectHeight="unset"
                       groupSelectPadding="var(--padding-sm) var(--padding-sm) var(--padding-mini) var(--padding-2xl)"
@@ -426,7 +479,7 @@ const Desktop1 = () => {
           </div>
         </section>
       </main>
-      <Footer1 />
+      <Footer />
     </div>
   );
 };

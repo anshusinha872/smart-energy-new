@@ -21,7 +21,9 @@ const FrameComponent18 = ({
   return (
     <div className={styles.mobileNoParent}>
       <b className={styles.mobileNo}>{mobileNo}</b>
-      <select className={styles.frameChild} style={groupSelect1Style} />
+      <select className={styles.frameChild} style={groupSelect1Style} value="Monday to Friday">
+      <option value="Monday to Friday">Monday to Friday</option>
+      </select>
     </div>
   );
 };

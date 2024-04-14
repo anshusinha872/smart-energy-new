@@ -408,7 +408,7 @@
   font-size: var(--icon-small-size);
   background-color: transparent;
   height: 32px;
-  width: 38px;
+  width: 80px;
   position: relative;
   letter-spacing: 0.08em;
   line-height: 32px;
@@ -926,6 +926,7 @@
   position: relative;
   gap: var(--gap-30xl);
   margin-top: -183px;
+  background-color: #ABCC78;
 }
 .frameParent4 {
   align-items: flex-end;
@@ -1103,4 +1104,13 @@
   .cad399 {
     font-size: var(--font-size-lgi);
   }
+}
+
+.form-control{
+  height:100px;
+  width: 90px;
+  text-align: center;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
 }

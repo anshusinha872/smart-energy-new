@@ -1,22 +1,48 @@
 import GroupComponent1 from "./GroupComponent1";
 import DataAggregator from "./DataAggregator";
 import styles from "./NestedLoop.module.css";
+import React, { useState } from 'react';
+import Logo from "../assets/images/logo2.png"
+import Profile from "../assets/images/profile.png"
+import Downarrow from "../assets/images/downarrow.png"
+import NetBanking from "../assets/images/netbanking.png"
+import Greencard from "../assets/images/greencard.png"
+import Visa from "../assets/images/visa.png"
+import Check from "../assets/images/check.png"
+import Chip from "../assets/images/chip.png"
+import Wifi from "../assets/images/wifi.png"
+import Dots from "../assets/images/dots.png"
+import Dotline from "../assets/images/dotline.png"
 
 const NestedLoop = () => {
+  const [cardNumber, setCardNumber] = useState('');
+
+  const handleCardNumberChange = (e) => {
+    let formattedNumber = e.target.value
+      .replace(/\D/g, '') // Remove non-numeric characters
+      .replace(/(.{4})/g, '$1 ') // Add a space every 4 characters
+      .trim(); // Remove trailing space
+
+    // Limit to 16 digits
+    formattedNumber = formattedNumber.substring(0, 19);
+
+    // Set the state with the formatted number
+    setCardNumber(formattedNumber);
+  };    
   return (
     <div className={styles.nestedLoop}>
       <header className={styles.dataSplitter}>
-        <img className={styles.icon} loading="lazy" alt="" />
+        <img className={styles.icon} loading="lazy" alt="" src={Logo} />
         <button className={styles.inputSource}>
           <div className={styles.errorHandler}>
             <div className={styles.functionCall}>
-              <img className={styles.healthiconsuiUserProfile} alt="" />
+              <img className={styles.healthiconsuiUserProfile} alt="" src={Profile}/>
               <div className={styles.list}>
                 <div className={styles.alexCooper}>Alex Cooper</div>
               </div>
             </div>
             <div className={styles.ictwotoneArrowDropDownWrapper}>
-              <img className={styles.ictwotoneArrowDropDownIcon} alt="" />
+              <img className={styles.ictwotoneArrowDropDownIcon} alt="" src={Downarrow} />
             </div>
           </div>
         </button>
@@ -35,12 +61,12 @@ const NestedLoop = () => {
         <div className={styles.frameGroup}>
           <div className={styles.frameWrapper}>
             <div className={styles.vectorParent}>
-              <img className={styles.frameChild} alt="" />
+              <img className={styles.frameChild} alt=""/>
               <form className={styles.frameContainer}>
                 <GroupComponent1 netBanking="net banking" />
                 <button className={styles.rectangleParent}>
                   <div className={styles.frameItem} />
-                  <img className={styles.bicreditCard2BackIcon} alt="" />
+                  <img className={styles.bicreditCard2BackIcon} alt="" src={Greencard}/>
                   <div className={styles.creditdebitCardWrapper}>
                     <div className={styles.creditdebitCard}>
                       credit/debit card
@@ -70,16 +96,18 @@ const NestedLoop = () => {
                   <div className={styles.rectangleGroup}>
                     <div className={styles.frameInner} />
                     <div className={styles.xxxxXxxxXxxxXxxxWrapper}>
-                      <input
-                        className={styles.xxxxXxxxXxxx}
-                        placeholder="xxxx xxxx xxxx xxxx"
-                        type="number"
-                      />
+                    <input
+            className={styles.xxxxXxxxXxxx} 
+            placeholder="xxxx xxxx xxxx xxxx"
+            type="text" // Use type="text" to prevent browser validation for non-numeric characters
+            value={cardNumber} // Set the value to the formatted number
+            onChange={handleCardNumberChange} // Call the function to format the input
+          />
                     </div>
                     <div className={styles.oldVisaLogo3Parent}>
-                      <img className={styles.oldVisaLogo3Icon} alt="" />
+                      <img className={styles.oldVisaLogo3Icon} alt="" src={Visa} />
                       <div className={styles.frameWrapper2}>
-                        <img className={styles.groupIcon} alt="" />
+                        <img className={styles.groupIcon} alt="" src={Check}/>
                       </div>
                     </div>
                   </div>
@@ -96,7 +124,7 @@ const NestedLoop = () => {
                     type="text"
                   />
                   <div className={styles.queue}>
-                    <img className={styles.queueChild} alt="" />
+                    <img className={styles.queueChild} alt="" src={Check}/>
                   </div>
                 </div>
                 <div className={styles.finalOutputWrapper}>
@@ -159,12 +187,14 @@ const NestedLoop = () => {
                           className={styles.pngwing1Icon}
                           loading="lazy"
                           alt=""
+                          src={Chip}
                         />
                         <div className={styles.contactlessIcon1Wrapper}>
                           <img
                             className={styles.contactlessIcon1}
                             loading="lazy"
                             alt=""
+                            src={Wifi}
                           />
                         </div>
                       </div>
@@ -182,6 +212,7 @@ const NestedLoop = () => {
                                   className={styles.frameChild5}
                                   loading="lazy"
                                   alt=""
+                                  src={Dots}
                                 />
                               </div>
                               <div className={styles.frameWrapper12}>
@@ -189,6 +220,7 @@ const NestedLoop = () => {
                                   className={styles.frameChild6}
                                   loading="lazy"
                                   alt=""
+                                  src={Dots}
                                 />
                               </div>
                               <div className={styles.frameWrapper13}>
@@ -196,6 +228,7 @@ const NestedLoop = () => {
                                   className={styles.frameChild7}
                                   loading="lazy"
                                   alt=""
+                                  src={Dots}
                                 />
                               </div>
                               <div className={styles.div2}> 3333</div>
@@ -207,7 +240,7 @@ const NestedLoop = () => {
                         <div className={styles.parent}>
                           <div className={styles.div3}>9/27</div>
                           <div className={styles.oldVisaLogo5Wrapper}>
-                            <img className={styles.oldVisaLogo5Icon} alt="" />
+                            <img className={styles.oldVisaLogo5Icon} alt="" src={Visa} />
                           </div>
                         </div>
                         <div className={styles.visaCardWrapper}>
@@ -224,6 +257,7 @@ const NestedLoop = () => {
                       className={styles.dataProcessorIcon}
                       loading="lazy"
                       alt=""
+                      src={Dotline}
                     />
                   </div>
                   <div className={styles.amountToPay}>Amount to Pay</div>

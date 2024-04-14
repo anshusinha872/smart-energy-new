@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import styles from "./GroupComponent1.module.css";
+import NetBanking from "../assets/images/netbanking.png"
 
 const GroupComponent1 = ({ netBanking, propPadding, propMinWidth }) => {
   const groupButtonStyle = useMemo(() => {
@@ -17,7 +18,7 @@ const GroupComponent1 = ({ netBanking, propPadding, propMinWidth }) => {
   return (
     <button className={styles.rectangleParent} style={groupButtonStyle}>
       <div className={styles.frameChild} />
-      <img className={styles.bicreditCard2BackIcon} alt="" />
+      <img className={styles.bicreditCard2BackIcon} alt="" src={NetBanking}/>
       <div className={styles.netBankingWrapper}>
         <div className={styles.netBanking} style={netBankingStyle}>
           {netBanking}

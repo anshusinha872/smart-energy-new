@@ -81,3 +81,13 @@
     flex-wrap: wrap;
   }
 }
+
+.uploadButton {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px; /* Adjust the value to your preference */
+  border: 2px solid #59AEDF; /* Blue border */
+  cursor: pointer;
+  text-align: center;
+  color: #59AEDF;
+}

@@ -38,7 +38,17 @@ const ItemCollector = ({
           </div>
         </div>
       </div>
-      <img className={styles.itemCollectorItem} loading="lazy" alt="" />
+      {/* Container with shadow inside */}
+      <div className={styles.buttonContainer}>
+        {/* Plus button */}
+        <button className={styles.plusButton}>
+          -
+        </button>
+        {/* Minus button */}
+        <button className={styles.minusButton}>
+          +
+        </button>
+      </div>
     </div>
   );
 };

@@ -154,3 +154,32 @@
     gap: var(--gap-mid);
   }
 }
+.buttonContainer {
+  display: inline-block;
+  border: 2px solid transparent; /* Transparent border */
+  border-radius: 5px; /* Adjust border radius as needed */
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5); /* Shadow inside */
+  width: 80px;
+  height: 45px;
+}
+
+.plusButton,
+.minusButton {
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  background-color: #D3EAA0; /* Green background color */
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-top: 5px ;
+  margin-bottom: 5px;
+  color: #6D9A07;
+}
+
+.plusButton:hover,
+.minusButton:hover {
+  
+  background-color: darkgreen; /* Darker green color on hover */
+}

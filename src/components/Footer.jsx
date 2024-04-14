@@ -1,5 +1,13 @@
 import { useMemo } from "react";
 import styles from "./Footer.module.css";
+import Logo from "../assets/images/logo.png";
+import Email from "../assets/images/email.png";
+import Phone from "../assets/images/phone.png";
+import Location from "../assets/images/location.png";
+import Arrowright from "../assets/images/arrowright.png";
+import Facebook from "../assets/images/facebook.png";
+import Twitter from "../assets/images/twitter.png";
+import Instagram from "../assets/images/instagram.png";
 
 const Footer = ({ propAlignSelf }) => {
   const smartEnergycompanycaStyle = useMemo(() => {
@@ -12,23 +20,26 @@ const Footer = ({ propAlignSelf }) => {
     <footer className={styles.footer}>
       <div className={styles.sizeAdjustor}>
         <div className={styles.positionManager}>
-          <img className={styles.positionManagerChild} loading="lazy" alt="" />
+          <img className={styles.positionManagerChild} loading="lazy" alt="" src={Logo}/>
           <div className={styles.frameParent}>
             <div className={styles.phenvelopeFillParent}>
               <img
                 className={styles.phenvelopeFillIcon}
                 loading="lazy"
                 alt=""
+                src={Email}
               />
               <img
                 className={styles.phphoneCallFillIcon}
                 loading="lazy"
                 alt=""
+                src={Phone}
               />
               <img
                 className={styles.phmapPinLineFillIcon}
                 loading="lazy"
                 alt=""
+                src={Location}
               />
             </div>
             <div className={styles.triangleFormerWrapper}>
@@ -54,19 +65,19 @@ const Footer = ({ propAlignSelf }) => {
             <b className={styles.quickLinks1}>Quick Links</b>
             <div className={styles.iconList}>
               <div className={styles.list}>
-                <div className={styles.caretRight}>caret-right</div>
+              <img src={Arrowright} alt="Facebook" className={styles.caretRight5} />
                 <div className={styles.home}>Home</div>
               </div>
               <div className={styles.list1}>
-                <div className={styles.caretRight1}>caret-right</div>
+              <img src={Arrowright} alt="Facebook" className={styles.caretRight5} />
                 <div className={styles.aboutUs}>About Us</div>
               </div>
               <div className={styles.list2}>
-                <div className={styles.caretRight2}>caret-right</div>
+              <img src={Arrowright} alt="Facebook" className={styles.caretRight5} />
                 <div className={styles.ourService}>Our Service</div>
               </div>
               <div className={styles.list3}>
-                <div className={styles.caretRight3}>caret-right</div>
+              <img src={Arrowright} alt="Facebook" className={styles.caretRight5} />
                 <div className={styles.testimonials}>Testimonials</div>
               </div>
             </div>
@@ -75,15 +86,16 @@ const Footer = ({ propAlignSelf }) => {
             <b className={styles.usefulLinks}>Useful Links</b>
             <div className={styles.iconList1}>
               <div className={styles.list4}>
-                <div className={styles.caretRight4}>caret-right</div>
+              <img src={Arrowright} alt="Facebook" className={styles.caretRight5} />
                 <div className={styles.privacyPolicy}>Privacy Policy</div>
               </div>
               <div className={styles.list5}>
-                <div className={styles.caretRight5}>caret-right</div>
+              <img src={Arrowright} alt="Facebook" className={styles.caretRight5} />
+                
                 <div className={styles.disclaimer}>Disclaimer</div>
               </div>
               <div className={styles.list6}>
-                <div className={styles.caretRight6}>caret-right</div>
+              <img src={Arrowright} alt="Facebook" className={styles.caretRight5} />
                 <div
                   className={styles.termsCondition}
                 >{`Terms & Condition`}</div>
@@ -95,9 +107,9 @@ const Footer = ({ propAlignSelf }) => {
         <div className={styles.gradientMaker}>
           <b className={styles.followUs}>Follow Us</b>
           <div className={styles.maskProducer}>
-            <div className={styles.facebook}>facebook</div>
-            <div className={styles.twitter}>twitter</div>
-            <div className={styles.instagram}>instagram</div>
+          <img src={Facebook} alt="Facebook" className={styles.facebook} />
+        <img src={Twitter} alt="Twitter" className={styles.twitter} />
+        <img src={Instagram} alt="Instagram" className={styles.instagram} />
           </div>
         </div>
       </div>

@@ -50,22 +50,27 @@ const KdTreeZ = ({
 
   return (
     <div className={styles.kdTreeZ} style={kdTreeZStyle}>
-      <b className={styles.mobileNo} style={mobileNoStyle}>
-        {mobileNo}
-      </b>
-      <div className={styles.rectangleParent} style={groupDivStyle}>
-        <div className={styles.frameChild} />
-        <div className={styles.octree} style={octreeStyle}>
-          <div className={styles.documentpdf}>{documentpdf}</div>
-        </div>
-        <input
-          className={styles.frameItem}
-          value="Upload"
-          type="text"
-          style={groupInputStyle}
-        />
+    <b className={styles.mobileNo} style={mobileNoStyle}>
+      {mobileNo}
+    </b>
+    <div className={styles.rectangleParent} style={groupDivStyle}>
+      <div className={styles.frameChild} />
+      <div className={styles.octree} style={octreeStyle}>
+        <div className={styles.documentpdf}>{documentpdf}</div>
       </div>
+      {/* Label styled as button */}
+      <label htmlFor="fileInput" className={styles.uploadButton}>
+        Upload
+        {/* File input */}
+        <input
+          type="file"
+          id="fileInput"
+          className={styles.frameItem}
+          style={{ display: 'none' }} // Hide the file input visually
+        />
+      </label>
     </div>
+  </div>
   );
 };
 
