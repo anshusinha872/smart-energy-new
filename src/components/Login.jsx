@@ -3,11 +3,26 @@ import CopyIcon from "./CopyIcon";
 import styles from "./Login.module.css";
 // import logo from public folder
 import logo from "../../public/21@2x.png";
-import Group_1000004746 from "../../public/Group 1000004746.png";
+import Group_1000004753 from "../assets/Group_1000004753.png";
+import { useState } from "react";
 const Login = () => {
+  const [isFocusedArr, setIsFocusedArr] = useState([
+    false,
+    false,
+    false,
+    false,
+  ]);
+
   return (
     <div className={styles.login}>
-      <img className={styles.loginChild}  loading="lazy" src={Group_1000004746} alt="" />
+      <div className={styles.loginParent}>
+        <img
+          className={styles.loginChild}
+          loading="lazy"
+          src={Group_1000004753}
+          alt=""
+        />
+      </div>
       <div className={styles.loginInner}>
         <div className={styles.frameParent}>
           <FrameComponent15
@@ -24,13 +39,12 @@ const Login = () => {
                       <CopyIcon />
                       <div className={styles.frameParent2}>
                         <div className={styles.frameParent3}>
-                          <img
+                          {/* <img
                             className={styles.frameChild}
                             loading="lazy"
                             alt=""
-                            // src={logo}
-                          />
-                          <img
+                          /> */}
+                          {/* <img
                             className={styles.frameItem}
                             loading="lazy"
                             alt=""
@@ -43,8 +57,55 @@ const Login = () => {
                               loading="lazy"
                               alt=""
                             />
-                          </div>
-                          <img className={styles.rectangle11Copy3} alt="" />
+                          </div> */}
+                          <input
+                            className={`${styles.rectangle11Copy3} ${
+                              isFocusedArr[0] ? styles.group : "false"
+                            }`}
+                            onFocus={() => {
+                              setIsFocusedArr([true, false, false, false]);
+                            }}
+                            onBlur={() => {
+                              setIsFocusedArr([false, false, false, false]);
+                            }}
+                            type="text"
+                          />
+                          <input
+                            className={`${styles.rectangle11Copy3} ${
+                              isFocusedArr[1] ? styles.group : "false"
+                            }`}
+                            onFocus={() => {
+                              setIsFocusedArr([false, true, false, false]);
+                            }}
+                            onBlur={() => {
+                              setIsFocusedArr([false, false, false, false]);
+                            }}
+                            type="text"
+                          />
+                          <input
+                            className={`${styles.rectangle11Copy3} ${
+                              isFocusedArr[2] ? styles.group : "false"
+                            }`}
+                            onFocus={() => {
+                              setIsFocusedArr([false, false, true, false]);
+                            }}
+                            onBlur={() => {
+                              setIsFocusedArr([false, false, false, false]);
+                            }}
+                            type="text"
+                          />
+                          <input
+                            className={`${styles.rectangle11Copy3} ${
+                              isFocusedArr[3] ? styles.group : "false"
+                            }`}
+                            onFocus={() => {
+                              setIsFocusedArr([false, false, false, true]);
+                            }}
+                            onBlur={() => {
+                              setIsFocusedArr([false, false, false, false]);
+                            }}
+                            type="text"
+                          />
                         </div>
                         <div className={styles.frameWrapper1}>
                           <div className={styles.parent}>

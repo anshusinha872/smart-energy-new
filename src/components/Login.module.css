@@ -1,5 +1,12 @@
+.loginParent {
+  height: 100vh;
+  background: linear-gradient(180deg, #7caf2c 0%, #1d4923 100%), url(london.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .loginChild {
-  width: 720px;
+  width: 500px;
   position: relative;
   max-height: 100%;
   object-fit: cover;
@@ -40,6 +47,7 @@
 .div {
   display: inline-block;
   min-width: 10px;
+  
 }
 .path10Icon {
   height: 19px;
@@ -48,7 +56,9 @@
 .group {
   border-radius: 8.14px;
   background-color: var(--color-olivedrab-100);
-  border: 0 solid var(--color-olivedrab-100);
+  /* border: 0 solid var(--color-olivedrab-100); */
+  border: none !important;
+  border-color: var(--color-olivedrab-100) !important;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -56,6 +66,7 @@
   padding: var(--padding-4xs-9) var(--padding-2xs-8) var(--padding-3xs-4)
     var(--padding-sm-9);
   gap: var(--gap-12xs-1);
+  color: var(--white);
 }
 .rectangle11Copy3 {
   height: 38px;
@@ -63,6 +74,14 @@
   position: relative;
   border-radius: var(--br-8xs);
   min-height: 38px;
+  border-color: var(--color-olivedrab-100);
+  border-style: solid;
+  text-align: center;
+}
+/* when rectangle11Copy3 input is active */
+.rectangle11Copy3.active {
+  border-color: var(--color-olivedrab-100);
+  width: 40px;
 }
 .frameParent3 {
   display: flex;
@@ -244,7 +263,7 @@
   box-sizing: border-box;
 }
 .frameParent,
-.login,
+/* .login, */
 .loginInner {
   display: flex;
   justify-content: flex-start;
@@ -281,6 +300,8 @@
   font-size: var(--font-size-21xl);
   color: var(--color-olivedrab-100);
   font-family: var(--paragraph);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 @media screen and (max-width: 1325px) {
   .loginChild,
@@ -324,5 +345,8 @@
   }
   .frameParent {
     gap: var(--gap-19xl);
+  }
+  .login{
+    grid-template-columns: 1fr;
   }
 }
