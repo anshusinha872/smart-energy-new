@@ -1,6 +1,8 @@
 import FrameComponent4 from "./FrameComponent4";
 import styles from "./RotationRoles.module.css";
-
+import team1 from "../assets/team1.png";
+import team2 from "../assets/team2.png";
+import team3 from "../assets/team3.png";
 const RotationRoles = () => {
   return (
     <div className={styles.rotationRoles}>
@@ -9,8 +11,13 @@ const RotationRoles = () => {
           <div className={styles.frameGroup}>
             <div className={styles.frameContainer}>
               <div className={styles.patternMatcherParent}>
-                <div className={styles.patternMatcher}>
-                  <img className={styles.elementIcon} alt="" />
+                <div className={styles.timingControlWrapper}>
+                  <div className={styles.timingControl}>
+                    <div className={styles.errorHandler}>
+                      <div className={styles.errorHandlerChild} />
+                    </div>
+                    <div className={styles.timingControlChild} />
+                  </div>
                 </div>
                 <div className={styles.ourTeam}>Our Team</div>
                 <div className={styles.timingControlWrapper}>
@@ -31,12 +38,12 @@ const RotationRoles = () => {
         </div>
         <div className={styles.frameDiv}>
           <FrameComponent4
-            maskGroup="380.67x500x1765359222"
+            maskGroup={team1}
             coFounder="Co-Founder"
             stewartKarry="Stewart Karry"
           />
           <div className={styles.maskGroupParent}>
-            <img className={styles.maskGroupIcon} alt="" />
+            <img className={styles.maskGroupIcon} src={team2} alt="" />
             <div className={styles.wrapper}>
               <div className={styles.box}>
                 <div className={styles.title}>
@@ -47,7 +54,7 @@ const RotationRoles = () => {
             </div>
           </div>
           <FrameComponent4
-            maskGroup="380.67x500x1907160166"
+            maskGroup={team3}
             coFounder="CEO"
             stewartKarry="Tim Koulee"
           />

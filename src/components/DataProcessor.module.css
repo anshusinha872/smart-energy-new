@@ -55,7 +55,7 @@
   box-sizing: border-box;
 }
 .ourPricing {
-  flex: 1;
+  /* flex: 1; */
   position: relative;
   text-transform: uppercase;
   font-weight: 600;
@@ -70,6 +70,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-mini);
+  justify-content: center;
 }
 .chooseTheBest {
   margin: 0;
@@ -93,7 +94,7 @@
   max-width: 100%;
 }
 .title {
-  width: 756px;
+  /* width: 756px; */
   overflow: hidden;
   flex-shrink: 0;
   flex-direction: column;
