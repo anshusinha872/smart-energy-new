@@ -12,7 +12,11 @@ const Login = () => {
     false,
     false,
   ]);
-
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [otp, setOtp] = useState("");
+  const submit = () => {
+    console.log(phoneNumber);
+  };
   return (
     <div className={styles.login}>
       <div className={styles.loginParent}>
@@ -36,28 +40,14 @@ const Login = () => {
                 <div className={styles.frameGroup}>
                   <div className={styles.frameDiv}>
                     <div className={styles.frameParent1}>
-                      <CopyIcon />
+                      <CopyIcon
+                        label="Mobile Number"
+                        value={phoneNumber}
+                        setValue={setPhoneNumber}
+                        type="number"
+                      />
                       <div className={styles.frameParent2}>
                         <div className={styles.frameParent3}>
-                          {/* <img
-                            className={styles.frameChild}
-                            loading="lazy"
-                            alt=""
-                          /> */}
-                          {/* <img
-                            className={styles.frameItem}
-                            loading="lazy"
-                            alt=""
-                          />
-                          <div className={styles.group}>
-                            <img className={styles.rectangle11Copy2} alt="" />
-                            <div className={styles.div}>4</div>
-                            <img
-                              className={styles.path10Icon}
-                              loading="lazy"
-                              alt=""
-                            />
-                          </div> */}
                           <input
                             className={`${styles.rectangle11Copy3} ${
                               isFocusedArr[0] ? styles.group : "false"
@@ -119,7 +109,7 @@ const Login = () => {
                     </div>
                   </div>
                   <div className={styles.frameParent4}>
-                    <button className={styles.loginWrapper}>
+                    <button onClick={submit} className={styles.loginWrapper}>
                       <div className={styles.login1}>LOGIN</div>
                     </button>
                     <div className={styles.enterLoginDetailsOrCreateWrapper}>

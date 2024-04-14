@@ -6,6 +6,10 @@ const CopyIcon1 = ({
   hellomysitecom,
   propWidth,
   propWidth1,
+  label,
+  value,
+  setValue,
+  type,
   helloMySiteComLabelHeight,
   helloMySiteComLabelMinWidth,
 }) => {
@@ -25,12 +29,13 @@ const CopyIcon1 = ({
   return (
     <div className={styles.copyIcon}>
       <div className={styles.emailAddressWrapper} style={frameDiv7Style}>
-        <div className={styles.emailAddress}>{emailAddress}</div>
+        <div className={styles.emailAddress}>{label}</div>
       </div>
       <input
         className={styles.helloMySiteComLabel}
-        placeholder="Full Name"
-        type="text"
+        placeholder={label}
+        type={type}
+        onChange={(e) => setValue(e.target.value)}
         style={helloMySiteComLabelStyle}
       />
     </div>

@@ -3,8 +3,17 @@ import CopyIcon1 from "./CopyIcon1";
 import CopyIcon from "./CopyIcon";
 import styles from "./Signup.module.css";
 import Group_1000004746 from "../../public/Group 1000004746.png";
+import { useState } from "react";
 
 const Signup = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [number, setNumber] = useState("");
+  const submit = () => {
+    console.log(name);
+    console.log(email);
+    console.log(number);
+  };
   return (
     <div className={styles.signup}>
       <div className={styles.signupContainer}>
@@ -25,14 +34,32 @@ const Signup = () => {
               </div>
               <div className={styles.signupLabelInner}>
                 <div className={styles.copyIconParent}>
-                  <CopyIcon1 emailAddress="Full Name" />
                   <CopyIcon1
-                    emailAddress="Email ID"
+                    // emailAddress="Email ID"
                     propWidth="124.2px"
                     helloMySiteComLabelHeight="51px"
                     helloMySiteComLabelMinWidth="219px"
+                    label="Full Name"
+                    value={name}
+                    setValue={setName}
+                    type="text"
                   />
-                  <CopyIcon />
+                  <CopyIcon1
+                    // emailAddress="Email ID"
+                    propWidth="124.2px"
+                    helloMySiteComLabelHeight="51px"
+                    helloMySiteComLabelMinWidth="219px"
+                    label="Email ID"
+                    value={email}
+                    setValue={setEmail}
+                    type="text"
+                  />
+                  <CopyIcon
+                    label="Mobile Number"
+                    value={number}
+                    setValue={setNumber}
+                    type="number"
+                  />
                   <div className={styles.frameGroup}>
                     <div className={styles.frameContainer}>
                       <img
@@ -62,7 +89,7 @@ const Signup = () => {
                 </div>
               </div>
               <div className={styles.signupHeaderParent}>
-                <button className={styles.signupHeader}>
+                <button onClick={submit} className={styles.signupHeader}>
                   <div className={styles.signUp}>SIGN UP</div>
                 </button>
                 <div className={styles.loginLink}>
