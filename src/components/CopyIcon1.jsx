@@ -29,7 +29,7 @@ const CopyIcon1 = ({
       </div>
       <input
         className={styles.helloMySiteComLabel}
-        placeholder="Alex Cooper"
+        placeholder="Full Name"
         type="text"
         style={helloMySiteComLabelStyle}
       />

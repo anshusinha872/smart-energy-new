@@ -2,11 +2,19 @@ import FrameComponent15 from "./FrameComponent15";
 import CopyIcon1 from "./CopyIcon1";
 import CopyIcon from "./CopyIcon";
 import styles from "./Signup.module.css";
+import Group_1000004746 from "../../public/Group 1000004746.png";
 
 const Signup = () => {
   return (
     <div className={styles.signup}>
-      <img className={styles.signupChild} loading="lazy" alt="" />
+      <div className={styles.signupContainer}>
+        <img
+          className={styles.signupChild}
+          loading="lazy"
+          src={Group_1000004746}
+          alt=""
+        />
+      </div>
       <div className={styles.signupInner}>
         <div className={styles.frameParent}>
           <FrameComponent15 iconnavigationarrowBackIo="data:image/gif;base64,R0lGODlhAQABAHAAACH5BAUAAAAALAAAAAABAAEAAAICRAEAOw==" />
