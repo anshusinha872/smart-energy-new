@@ -1,0 +1,69 @@
+.groupChild,
+.groupInner,
+.groupItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-11xs);
+  background-color: var(--color-goldenrod);
+  width: 34px;
+  height: 3px;
+}
+.groupInner,
+.groupItem {
+  left: 35px;
+  width: 6px;
+}
+.groupInner {
+  left: 42px;
+  width: 3px;
+}
+.rectangleParent {
+  width: 45px;
+  height: 3px;
+  position: relative;
+  display: none;
+}
+.nestedLoopWrapper,
+.payment {
+  display: flex;
+  box-sizing: border-box;
+}
+.nestedLoopWrapper {
+  width: 1309px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-41xl);
+  max-width: 100%;
+}
+.payment {
+  width: 100%;
+  position: relative;
+  background-color: var(--white);
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-32xl) 0 0;
+  gap: 123px;
+  letter-spacing: normal;
+  line-height: normal;
+}
+@media screen and (max-width: 1200px) {
+  .nestedLoopWrapper {
+    padding-left: var(--padding-11xl);
+    padding-right: var(--padding-11xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .payment {
+    gap: var(--gap-42xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .payment {
+    gap: var(--gap-12xl);
+  }
+}

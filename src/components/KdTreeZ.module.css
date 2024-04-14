@@ -1,0 +1,83 @@
+.mobileNo {
+  position: relative;
+  text-transform: capitalize;
+  mix-blend-mode: normal;
+  z-index: 1;
+}
+.frameChild {
+  height: 47px;
+  width: 350px;
+  position: relative;
+  border-radius: var(--br-8xs);
+  background-color: var(--white);
+  border: 1px solid var(--color-gainsboro-400);
+  box-sizing: border-box;
+  display: none;
+  max-width: 100%;
+}
+.documentpdf {
+  align-self: stretch;
+  position: relative;
+  z-index: 1;
+}
+.frameItem,
+.octree {
+  width: 155px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) 0 0;
+  box-sizing: border-box;
+}
+.frameItem {
+  border: 1px solid var(--color-steelblue-100);
+  outline: 0;
+  background-color: transparent;
+  height: 22px;
+  width: 69px;
+  border-radius: var(--br-8xs);
+  flex-direction: row;
+  padding: var(--padding-9xs) var(--padding-2xs);
+  font-family: var(--paragraph);
+  font-size: var(--font-size-2xs);
+  color: var(--color-steelblue-100);
+  z-index: 2;
+}
+.kdTreeZ,
+.rectangleParent {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.rectangleParent {
+  align-self: stretch;
+  border-radius: var(--br-8xs);
+  background-color: var(--white);
+  border: 1px solid var(--color-gainsboro-400);
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-xs) var(--padding-mini) var(--padding-smi)
+    var(--padding-xl);
+  gap: var(--gap-xl);
+  z-index: 1;
+  font-size: var(--accent-text-size);
+  color: var(--color-dimgray-100);
+}
+.kdTreeZ {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  min-width: 231px;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-darkslategray-400);
+  font-family: var(--paragraph);
+}
+@media screen and (max-width: 450px) {
+  .rectangleParent {
+    flex-wrap: wrap;
+  }
+}

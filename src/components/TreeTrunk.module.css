@@ -1,0 +1,118 @@
+.treeTrunkChild {
+  height: 100px;
+  width: 1440px;
+  position: relative;
+  background-color: var(--white);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  display: none;
+  max-width: 100%;
+}
+.icon {
+  height: 71px;
+  width: 195px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+.healthiconsuiUserProfile {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.alexCooper {
+  position: relative;
+  font-size: var(--font-size-base);
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: var(--font-plus-jakarta-sans);
+  color: var(--color-yellowgreen-100);
+  text-align: left;
+  display: inline-block;
+  min-width: 96px;
+  white-space: nowrap;
+  z-index: 1;
+}
+.alexCooperWrapper,
+.siblingLink {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.alexCooperWrapper {
+  flex-direction: column;
+  padding: var(--padding-7xs) 0 0;
+}
+.siblingLink {
+  flex-direction: row;
+  gap: var(--gap-4xs);
+}
+.ictwotoneArrowDropDownIcon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.ictwotoneArrowDropDownWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-9xs) 0 0;
+}
+.parentLink {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.parentLinkWrapper,
+.treeTrunk {
+  display: flex;
+  box-sizing: border-box;
+}
+.parentLinkWrapper {
+  width: 194px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-lgi);
+}
+.treeTrunk {
+  align-self: stretch;
+  background-color: var(--white);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: var(--padding-sm) var(--padding-34xl) var(--padding-mini)
+    var(--padding-101xl);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  max-width: 100%;
+  gap: var(--gap-xl);
+}
+@media screen and (max-width: 750px) {
+  .treeTrunk {
+    padding-left: var(--padding-41xl);
+    padding-right: var(--padding-7xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .treeTrunk {
+    padding-left: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,38 @@
+.cvvNumber {
+  width: 148px;
+  position: relative;
+  text-transform: capitalize;
+  font-weight: 600;
+  display: inline-block;
+  z-index: 1;
+}
+.enterThe3Digit {
+  position: relative;
+  font-size: var(--accent-text-size);
+  color: var(--color-dimgray-100);
+  text-align: left;
+  z-index: 1;
+}
+.cvvNumberParent,
+.dataAggregator {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cvvNumberParent {
+  justify-content: flex-start;
+  gap: var(--gap-mid);
+}
+.dataAggregator {
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-2xs-9);
+  text-align: center;
+  font-size: var(--font-size-3xl);
+  color: var(--color-darkslategray-300);
+  font-family: var(--paragraph);
+}
+@media screen and (max-width: 450px) {
+  .cvvNumber {
+    font-size: var(--paragraph-size);
+  }
+}

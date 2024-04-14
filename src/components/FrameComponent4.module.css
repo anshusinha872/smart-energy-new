@@ -1,0 +1,67 @@
+.maskGroupIcon {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.coFounder,
+.stewartKarry {
+  align-self: stretch;
+  position: relative;
+  line-height: 24px;
+  font-weight: 600;
+}
+.stewartKarry {
+  font-size: var(--heading-standar-size);
+  line-height: 35px;
+  color: var(--dark-green);
+}
+.title {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: var(--gap-3xs);
+}
+.box,
+.maskGroupParent,
+.title,
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.box {
+  align-self: stretch;
+  border-radius: var(--br-11xl);
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  align-items: center;
+  padding: var(--padding-16xl);
+}
+.maskGroupParent,
+.wrapper {
+  align-items: flex-start;
+}
+.wrapper {
+  align-self: stretch;
+  padding: 0 var(--padding-16xl);
+  z-index: 1;
+  margin-top: -35px;
+}
+.maskGroupParent {
+  height: 604px;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--body);
+  font-family: var(--paragraph);
+}
+@media screen and (max-width: 450px) {
+  .stewartKarry {
+    font-size: var(--icon-small-size);
+    line-height: 28px;
+  }
+}

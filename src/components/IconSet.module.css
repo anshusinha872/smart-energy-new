@@ -1,0 +1,132 @@
+.occupancyDay {
+  position: relative;
+  letter-spacing: 0.5px;
+  line-height: 21px;
+  text-transform: capitalize;
+  display: inline-block;
+  min-width: 97px;
+  z-index: 1;
+}
+.flexibleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 0;
+}
+.occupancyTime {
+  position: relative;
+  letter-spacing: 0.5px;
+  line-height: 21px;
+  text-transform: capitalize;
+  display: inline-block;
+  min-width: 104px;
+  z-index: 1;
+}
+.roundedCorners {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: var(--gap-xl);
+}
+.roundedCornersWrapper,
+.sliderControls {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.roundedCornersWrapper {
+  width: 465px;
+  padding: 0 var(--padding-sm);
+  max-width: 100%;
+}
+.sliderControls {
+  align-self: stretch;
+  height: 55px;
+  border-radius: var(--br-8xs);
+  background-color: var(--white);
+  border: 1px solid var(--color-royalblue);
+  padding: var(--padding-mid) var(--padding-smi);
+  font-family: var(--font-source-sans-pro);
+  font-size: var(--font-size-mini);
+  color: var(--color-gray-200);
+  z-index: 1;
+}
+.searchBar,
+.sliderControls1 {
+  box-sizing: border-box;
+  min-width: 182px;
+}
+.searchBar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 0;
+}
+.sliderControls1 {
+  height: 55px;
+  flex: 0.8929;
+  border-radius: var(--br-8xs);
+  background-color: var(--white);
+  border: 1px solid var(--color-royalblue);
+  flex-direction: row;
+  padding: var(--padding-mid) var(--padding-sm);
+  font-family: var(--font-source-sans-pro);
+  font-size: var(--font-size-mini);
+  color: var(--color-gray-200);
+  z-index: 1;
+}
+.iconSet,
+.searchBarParent,
+.slideTransition,
+.sliderControls1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.searchBarParent {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-35xl);
+}
+.iconSet,
+.slideTransition {
+  max-width: 100%;
+}
+.slideTransition {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-10xs);
+}
+.iconSet {
+  width: 620px;
+  flex-direction: row;
+  padding: 0 var(--padding-10xs) var(--padding-8xs);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--white);
+  font-family: var(--icon-small);
+}
+@media screen and (max-width: 700px) {
+  .searchBar,
+  .sliderControls1 {
+    flex: 1;
+  }
+  .searchBarParent {
+    flex-wrap: wrap;
+    gap: var(--gap-8xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .roundedCorners {
+    flex-wrap: wrap;
+  }
+}

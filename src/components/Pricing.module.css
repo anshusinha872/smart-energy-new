@@ -1,0 +1,52 @@
+.frameParent {
+  width: 1205px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-69xl);
+  max-width: 100%;
+}
+.pricing,
+.pricingInner {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.pricingInner {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-10xl) 0 var(--padding-xl);
+  max-width: 100%;
+}
+.pricing {
+  width: 100%;
+  position: relative;
+  background-color: var(--white);
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-41xl) 0 0;
+  gap: 190px;
+  letter-spacing: normal;
+  line-height: normal;
+}
+@media screen and (max-width: 750px) {
+  .pricing {
+    gap: 95px;
+  }
+}
+@media screen and (max-width: 675px) {
+  .frameParent {
+    gap: var(--gap-25xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .frameParent {
+    gap: var(--gap-3xl);
+  }
+  .pricing {
+    gap: var(--gap-28xl);
+  }
+}

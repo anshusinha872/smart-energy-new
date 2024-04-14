@@ -1,0 +1,51 @@
+.iconnavigationarrowBackIos {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  min-height: 20px;
+}
+.back {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 41px;
+}
+.emailAddressLabel,
+.iconnavigationarrowBackIosParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.iconnavigationarrowBackIosParent {
+  text-decoration: none;
+  flex-direction: row;
+  gap: var(--gap-4xs);
+  color: inherit;
+}
+.emailAddressLabel {
+  flex-direction: column;
+  padding: var(--padding-lg) 0 0;
+}
+.contentContainerIcon {
+  height: 71px;
+  width: 195px;
+  position: relative;
+  object-fit: cover;
+}
+.emailAddressLabelParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-olivedrab-100);
+  font-family: var(--paragraph);
+}
+@media screen and (max-width: 450px) {
+  .emailAddressLabelParent {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,44 @@
+.emailAddress {
+  flex: 1;
+  position: relative;
+  line-height: 17px;
+  font-weight: 600;
+}
+.copyIcon,
+.emailAddressWrapper,
+.helloMySiteComLabel {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.emailAddressWrapper {
+  width: 171.2px;
+  flex-direction: row;
+  padding: 0 var(--padding-sm) 0 var(--padding-mini-1);
+  box-sizing: border-box;
+}
+.copyIcon,
+.helloMySiteComLabel {
+  align-self: stretch;
+  font-family: var(--paragraph);
+}
+.helloMySiteComLabel {
+  border: 1px solid var(--color-aliceblue);
+  outline: 0;
+  background-color: var(--color-mintcream);
+  height: 51px;
+  border-radius: var(--br-8xs);
+  box-sizing: border-box;
+  flex-direction: row;
+  padding: var(--padding-sm) var(--padding-mini-1);
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  min-width: 219px;
+}
+.copyIcon {
+  flex-direction: column;
+  gap: var(--gap-7xs);
+  text-align: left;
+  font-size: var(--accent-text-size);
+  color: var(--color-olivedrab-100);
+}

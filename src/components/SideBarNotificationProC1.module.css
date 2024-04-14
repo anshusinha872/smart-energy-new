@@ -1,0 +1,313 @@
+.sideBarSeparatorChild {
+  align-self: stretch;
+  height: 129px;
+  position: relative;
+  background-color: var(--white);
+  display: none;
+}
+.icon {
+  height: 71px;
+  width: 195px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-14xl);
+}
+.separatorIcon {
+  align-self: stretch;
+  height: 1px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.sideBarSeparator {
+  align-self: stretch;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-14xl) 0 0;
+  gap: var(--gap-7xl);
+}
+.vuesaxboldelement3Icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.vuesaxboldelement3Wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 0;
+}
+.pagetitle {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 30px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 92px;
+}
+.frameA {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  color: inherit;
+}
+.icon1 {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.iconWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-7xs) 0 0;
+}
+.pagetitle1 {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 30px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 67px;
+}
+.frameParent1 {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-4xs);
+  color: inherit;
+}
+.frameWrapper {
+  flex-direction: row;
+  padding: 0 var(--padding-10xs);
+}
+.frameContainer,
+.frameWrapper,
+.vuesaxBoldElementInner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameContainer {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-8xl);
+}
+.vuesaxBoldElementInner {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-11xs);
+}
+.icon2 {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 0;
+}
+.pagetitle2 {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 30px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 51px;
+}
+.frameParent2 {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl) 0 0;
+  gap: var(--gap-xs);
+  color: inherit;
+}
+.vuesaxBoldElement,
+.vuesaxBoldElementWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.vuesaxBoldElement {
+  align-self: stretch;
+  justify-content: flex-start;
+  gap: var(--gap-14xl);
+}
+.vuesaxBoldElementWrapper {
+  width: 130px;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-10xs);
+  box-sizing: border-box;
+}
+.active {
+  width: 4px;
+  height: 36px;
+  position: relative;
+  border-radius: var(--br-6xl);
+}
+.activeWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-104xl) 0 0;
+}
+.active1 {
+  height: 36px;
+  width: 4px;
+  position: relative;
+  border-radius: var(--br-6xl);
+}
+.frameDiv,
+.frameGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameGroup {
+  align-self: stretch;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.icon3 {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.iconFrame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 0;
+}
+.pagetitle3 {
+  position: relative;
+  line-height: 30px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 70px;
+}
+.frameParent4,
+.frameWrapper1 {
+  display: flex;
+  align-items: flex-start;
+}
+.frameParent4 {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.frameWrapper1 {
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-10xs);
+}
+.active2,
+.active3 {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  border-radius: var(--br-6xl);
+  width: 4px;
+  height: 36px;
+}
+.active3 {
+  top: 0;
+  left: 4px;
+  background-color: var(--white);
+  z-index: 1;
+}
+.activeParent {
+  height: 41px;
+  width: 8px;
+  position: relative;
+}
+.frameParent3 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.frameParent,
+.sidebarNotificationProC {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.frameParent {
+  align-self: stretch;
+  align-items: flex-start;
+  padding: 0 0 var(--padding-419xl) var(--padding-8xl);
+  gap: var(--gap-mini);
+}
+.sidebarNotificationProC {
+  flex: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(212, 212, 212, 0.1)
+  );
+  backdrop-filter: blur(50.6px);
+  border: 1px solid var(--white);
+  overflow: hidden;
+  align-items: flex-end;
+  padding: 0 0 var(--padding-198xl);
+  gap: var(--gap-6xl);
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--white);
+  font-family: var(--paragraph);
+}
+@media screen and (max-width: 975px) {
+  .sidebarNotificationProC {
+    padding-bottom: var(--padding-122xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 725px) {
+  .frameParent {
+    padding-bottom: var(--padding-266xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .sidebarNotificationProC {
+    padding-bottom: var(--padding-73xl);
+    box-sizing: border-box;
+  }
+}

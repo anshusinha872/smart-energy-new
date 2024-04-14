@@ -1,0 +1,77 @@
+.frameGroup,
+.wrapper {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.wrapper {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap-11xl);
+}
+.frameGroup {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-26xl);
+}
+.paginationChild,
+.paginationInner,
+.paginationItem {
+  height: 12px;
+  position: relative;
+  border-radius: var(--br-11xl);
+}
+.paginationChild {
+  flex: 1;
+  background-color: var(--color-yellowgreen-100);
+}
+.paginationInner,
+.paginationItem {
+  width: 12px;
+  background-color: var(--border);
+}
+.pagination,
+.paginationWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.pagination {
+  width: 98px;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.paginationWrapper {
+  align-self: stretch;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+}
+.frameParent,
+.frameWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frameParent {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-11xl);
+}
+.frameWrapper {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-xl) 0 var(--padding-lg);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--icon-small-size);
+  color: var(--body);
+  font-family: var(--paragraph);
+}
+@media screen and (max-width: 750px) {
+  .frameGroup {
+    gap: var(--gap-3xl);
+  }
+}

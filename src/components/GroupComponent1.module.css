@@ -1,0 +1,45 @@
+.frameChild {
+  height: 80px;
+  width: 181px;
+  position: relative;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-mintcream);
+  display: none;
+}
+.bicreditCard2BackIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.netBanking {
+  position: relative;
+  font-size: var(--font-size-mini);
+  text-transform: capitalize;
+  font-family: var(--paragraph);
+  color: var(--color-darkgray-300);
+  text-align: left;
+  display: inline-block;
+  min-width: 94px;
+  z-index: 1;
+}
+.netBankingWrapper,
+.rectangleParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) 0 0;
+}
+.rectangleParent {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-9xl) var(--padding-7xl) var(--padding-9xl)
+    var(--padding-10xl);
+  background-color: var(--color-mintcream);
+  border-radius: var(--br-9xs);
+  flex-direction: row;
+  gap: var(--gap-5xs);
+}

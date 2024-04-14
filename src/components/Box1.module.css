@@ -1,0 +1,215 @@
+.div,
+.payPerUse {
+  position: relative;
+}
+.payPerUse {
+  align-self: stretch;
+  letter-spacing: 0.06em;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.div {
+  width: 93px;
+  line-height: 47px;
+  text-transform: capitalize;
+  display: inline-block;
+  min-width: 93px;
+  white-space: nowrap;
+}
+.title,
+.wrapper {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+}
+.wrapper {
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  font-size: var(--font-size-16xl);
+  color: var(--color-yellowgreen-100);
+  font-family: var(--paragraph);
+}
+.title {
+  border-bottom: 1px dashed var(--border);
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 var(--padding-6xl);
+  gap: var(--gap-3xs);
+}
+.circleCheck,
+.detailedInsightsOn {
+  position: relative;
+  display: inline-block;
+}
+.circleCheck {
+  height: 20px;
+  width: 20px;
+  line-height: 24px;
+  min-width: 20px;
+}
+.detailedInsightsOn {
+  flex: 1;
+  font-size: var(--font-size-mid);
+  line-height: 26px;
+  font-family: var(--paragraph);
+  color: var(--body);
+  min-width: 180px;
+}
+.iconList1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-mini);
+}
+.circleCheck1 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+  min-width: 20px;
+}
+.costSavingOpportunities {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-mid);
+  line-height: 26px;
+  font-family: var(--paragraph);
+  color: var(--body);
+  display: inline-block;
+  min-width: 180px;
+}
+.iconList2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-mini);
+}
+.circleCheck2 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+  min-width: 20px;
+}
+.environmentalImpactAssessmen {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-mid);
+  line-height: 26px;
+  font-family: var(--paragraph);
+  color: var(--body);
+  display: inline-block;
+  min-width: 150px;
+}
+.iconList,
+.iconList3 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-mini);
+}
+.iconList {
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: var(--icon-small-size);
+  color: var(--color-yellowgreen-100);
+  font-family: var(--icon-small);
+}
+.button1,
+.longArrowRight {
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 24px;
+  color: var(--white);
+  text-align: left;
+  display: inline-block;
+}
+.button1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: var(--paragraph);
+  min-width: 123px;
+}
+.longArrowRight {
+  width: 16px;
+  font-family: var(--icon-small);
+  min-width: 16px;
+}
+.box,
+.button {
+  border-radius: var(--br-11xl);
+  display: flex;
+  justify-content: center;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-mini) var(--padding-xl);
+  background-color: transparent;
+  align-self: stretch;
+  background: linear-gradient(90deg, #7caf2c, #1d4923);
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-3xs);
+}
+.box {
+  flex: 1;
+  background-color: var(--white-smoke);
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-16xl);
+  box-sizing: border-box;
+  gap: var(--gap-6xl);
+  min-width: 286px;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--accent-text-size);
+  color: var(--placeholder);
+  font-family: var(--accent-text);
+}
+@media screen and (max-width: 1050px) {
+  .div {
+    font-size: var(--font-size-9xl);
+    line-height: 38px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .div {
+    font-size: var(--font-size-2xl);
+    line-height: 28px;
+  }
+  .circleCheck {
+    font-size: var(--font-size-base);
+  }
+  .iconList1 {
+    flex-wrap: wrap;
+  }
+  .circleCheck1 {
+    font-size: var(--font-size-base);
+  }
+  .iconList2 {
+    flex-wrap: wrap;
+  }
+  .circleCheck2 {
+    font-size: var(--font-size-base);
+  }
+  .iconList3 {
+    flex-wrap: wrap;
+  }
+  .box {
+    padding-top: var(--padding-4xl);
+    padding-bottom: var(--padding-4xl);
+    box-sizing: border-box;
+  }
+}

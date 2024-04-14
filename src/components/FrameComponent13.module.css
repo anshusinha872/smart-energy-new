@@ -1,0 +1,149 @@
+.imageIcon {
+  height: 675.3px;
+  width: 1448.5px;
+  position: absolute;
+  margin: 0 !important;
+  top: -118px;
+  right: -4.5px;
+  object-fit: cover;
+}
+.frameChild {
+  width: 1440px;
+  height: 557px;
+  position: relative;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.68) 77.5%);
+  display: none;
+  max-width: 100%;
+}
+.theFutureOf {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 84px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: inherit;
+  z-index: 4;
+}
+.practicalRenewableEnergy {
+  height: 49px;
+  flex: 1;
+  position: relative;
+  line-height: 32px;
+  display: inline-block;
+  max-width: 100%;
+  z-index: 4;
+}
+.practicalRenewableEnergyTecWrapper,
+.theFutureOfEnergyEfficiencParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.practicalRenewableEnergyTecWrapper {
+  width: 655px;
+  flex-direction: row;
+  padding: 0 var(--padding-9xs);
+  box-sizing: border-box;
+  font-size: var(--paragraph-size);
+}
+.theFutureOfEnergyEfficiencParent {
+  width: 771px;
+  flex-direction: column;
+  gap: var(--gap-11xs);
+}
+.frameItem {
+  height: 45px;
+  width: 168px;
+  position: relative;
+  border-radius: var(--br-11xl);
+  background-color: var(--white);
+  display: none;
+}
+.getStarted {
+  width: 112px;
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 24px;
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: var(--paragraph);
+  color: var(--color-yellowgreen-100);
+  text-align: center;
+  min-width: 112px;
+  z-index: 1;
+}
+.rectangleGroup {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-smi) var(--padding-9xl) var(--padding-5xs);
+  background-color: var(--white);
+  border-radius: var(--br-11xl);
+  flex-direction: row;
+  white-space: nowrap;
+  z-index: 4;
+}
+.rectangleGroup:hover {
+  background-color: var(--color-gainsboro-100);
+}
+.frameWrapper,
+.imageParent,
+.rectangleGroup,
+.rectangleParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameWrapper {
+  flex-direction: row;
+  padding: 0 var(--padding-9xs);
+}
+.imageParent,
+.rectangleParent {
+  max-width: 100%;
+}
+.rectangleParent {
+  flex: 1;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.68) 77.5%);
+  flex-direction: column;
+  padding: var(--padding-15xl) var(--padding-110xl) var(--padding-85xl);
+  box-sizing: border-box;
+  gap: var(--gap-52xl);
+  z-index: 3;
+}
+.imageParent {
+  align-self: stretch;
+  flex-direction: row;
+  position: relative;
+  text-align: left;
+  font-size: var(--font-size-31xl);
+  color: var(--white);
+  font-family: var(--paragraph);
+}
+@media screen and (max-width: 1050px) {
+  .theFutureOf {
+    font-size: var(--font-size-21xl);
+    line-height: 67px;
+  }
+  .rectangleParent {
+    gap: var(--gap-16xl);
+    padding-left: var(--padding-45xl);
+    padding-right: var(--padding-45xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .rectangleParent {
+    gap: var(--gap-lg);
+    padding: var(--padding-3xl) var(--padding-13xl) var(--padding-49xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .theFutureOf {
+    font-size: var(--font-size-11xl);
+    line-height: 50px;
+  }
+}

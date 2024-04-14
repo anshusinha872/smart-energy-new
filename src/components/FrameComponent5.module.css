@@ -1,0 +1,30 @@
+.frameParent,
+.frameWrapper {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frameParent {
+  flex: 1;
+  display: grid;
+  gap: var(--gap-mini);
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+}
+.frameWrapper {
+  align-self: stretch;
+  display: flex;
+  padding: 0 0 var(--padding-7xl);
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1050px) {
+  .frameParent {
+    grid-template-columns: repeat(2, minmax(300px, 520px));
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 750px) {
+  .frameParent {
+    grid-template-columns: minmax(300px, 1fr);
+  }
+}

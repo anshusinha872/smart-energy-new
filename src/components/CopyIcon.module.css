@@ -1,0 +1,82 @@
+.country {
+  flex: 1;
+  position: relative;
+  line-height: 17px;
+  font-weight: 600;
+}
+.countryWrapper {
+  width: 192.2px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-sm) 0 var(--padding-mini-1);
+  box-sizing: border-box;
+}
+.bg,
+.frameChild {
+  position: relative;
+  max-width: 100%;
+}
+.bg {
+  height: 51px;
+  width: 364.2px;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-mintcream);
+  border: 1px solid var(--color-aliceblue);
+  box-sizing: border-box;
+  display: none;
+  z-index: 1;
+}
+.frameChild {
+  align-self: stretch;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 2;
+}
+.frameWrapper {
+  width: 127px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) 0 0;
+  box-sizing: border-box;
+}
+.hellomysitecom {
+  width: 170px;
+  position: relative;
+  line-height: 23px;
+  display: inline-block;
+  flex-shrink: 0;
+  white-space: nowrap;
+  z-index: 1;
+  margin-left: -61px;
+}
+.bgParent,
+.copyIcon {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.bgParent {
+  border-radius: var(--br-8xs);
+  background-color: var(--color-mintcream);
+  border: 1px solid var(--color-aliceblue);
+  box-sizing: border-box;
+  flex-direction: row;
+  padding: var(--padding-sm) var(--padding-lg-1);
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+}
+.copyIcon {
+  flex-direction: column;
+  gap: var(--gap-7xs);
+  text-align: left;
+  font-size: var(--accent-text-size);
+  color: var(--color-olivedrab-100);
+  font-family: var(--paragraph);
+}

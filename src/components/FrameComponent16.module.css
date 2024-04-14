@@ -1,0 +1,105 @@
+.chooseTheBest {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 59px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: inherit;
+  flex-shrink: 0;
+  debug_commit: f6aba90;
+}
+.subscriptionBox,
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.title {
+  width: 756px;
+  overflow: hidden;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  z-index: 1;
+}
+.subscriptionBox {
+  width: 1172px;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+}
+.predictiveAnalysisIconChild {
+  height: 702px;
+  width: 1301px;
+  position: absolute;
+  margin: 0 !important;
+  top: -169px;
+  left: calc(50% - 650.5px);
+}
+.wrapper {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-11xl);
+  max-width: 100%;
+  z-index: 1;
+}
+.perReport {
+  width: 83px;
+  position: absolute;
+  margin: 0 !important;
+  top: 101.7px;
+  right: 169px;
+  line-height: 24px;
+  display: inline-block;
+  min-width: 83px;
+  z-index: 2;
+}
+.predictiveAnalysisIcon,
+.subscriptionBoxParent {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.predictiveAnalysisIcon {
+  flex-direction: row;
+  position: relative;
+  font-size: var(--font-size-mini);
+  color: var(--color-darkgray-200);
+}
+.subscriptionBoxParent {
+  flex-direction: column;
+  gap: var(--gap-46xl);
+  text-align: center;
+  font-size: var(--font-size-19xl);
+  color: var(--heading);
+  font-family: var(--paragraph);
+}
+@media screen and (max-width: 750px) {
+  .chooseTheBest {
+    font-size: var(--font-size-11xl);
+    line-height: 47px;
+  }
+}
+@media screen and (max-width: 675px) {
+  .subscriptionBoxParent {
+    gap: var(--gap-13xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .chooseTheBest {
+    font-size: var(--font-size-4xl);
+    line-height: 35px;
+  }
+  .subscriptionBoxParent {
+    gap: var(--gap-base);
+  }
+}
